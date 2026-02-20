@@ -17,4 +17,5 @@ class Solution:
             n = n // 10
         
         return count
-        
+        ```
+        OUTPUT:
