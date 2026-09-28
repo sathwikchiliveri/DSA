@@ -170,13 +170,24 @@ public class Letters
 	    //s
 	    System.out.print(" ");
 	    for(int j=0;j<n;j++){
-	        if((j==0||i==0||i==n/2||j==n-1)){
+	        if((j==0||i==0||i==n/2||j==n-1||i==n-1)&&((i-j>-4)&&(i+j<8))){
 	        System.out.print("*");
 	        }
 	        else{
 	        System.out.print(" ");
 	        }
 	    }
+		//T
+		System.out.print(" ");
+	    for(int j=0;j<n;j++){
+	        if((j==n/2||i==0)){
+	        System.out.print("*");
+	        }
+	        else{
+	        System.out.print(" ");
+	        }
+	    }
+		
 	    System.out.println(" ");
 	}
 	}
