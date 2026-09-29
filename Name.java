@@ -15,7 +15,7 @@ public class Name
 		    }
 		    System.out.print(" ");
 		    for(int j=0;j<n;j++){
-		        if((j==0||i==0||j==n-1||i==n/2)&&(i+j> 0)&&(i-j<(n-1)){
+		        if((j==0||i==0||j==n-1||i==n/2)&&(i+j> 0)&&(i-j<(n-1))){
 		            System.out.print("*");
 		        }
 		        else{
