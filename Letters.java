@@ -60,7 +60,7 @@ public class Letters
 	    }
 	    System.out.print(" ");
 	    for(int j=0;j<n;j++){
-	        if((i==0||j==0||i==n-1||j==n/2||i==n/2||j==n-1)&&(i+j<6)){
+	        if((i==0||j==0||i==n-1||i==n/2||(j==n-1)&&(i-j>1))){
 	        System.out.print("*");
 	        }
 	        else{
@@ -140,7 +140,8 @@ public class Letters
 	        }
 	    }
 	    System.out.print(" ");
-	    for(int j=0;j<n;j++){
+	    //p
+		for(int j=0;j<n;j++){
 	        if((j==0||i==n/2||i==0||j==n-1)&&(i-j>-4)&&(i+j)<6){
 	        System.out.print("*");
 	        }
@@ -149,8 +150,9 @@ public class Letters
 	        }
 	    }
 	    System.out.print(" ");
+		//q
 	    for(int j=0;j<n;j++){
-	        if((j==0||j==n-1||i==0||i==n/2||i==n-1&&i+j>0&&i-j>-4)){
+	        if((j==0||j==n-1||i==0||i==n/2||i==n-1&&i+j>0)){
 	        System.out.print("*");
 	        }
 	        else{
@@ -170,7 +172,7 @@ public class Letters
 	    //s
 	    System.out.print(" ");
 	    for(int j=0;j<n;j++){
-	        if((j==0||i==0||i==n/2||j==n-1||i==n-1)&&((i-j>-4)&&(i+j<8))){
+	        if((j==0||i==0||i==n/2||j==n-1||i==n-1)&&((i-j>-4)&&(i+j<6))){
 	        System.out.print("*");
 	        }
 	        else{
@@ -198,7 +200,7 @@ public class Letters
 	    }
 		System.out.print(" ");
 	    for(int j=0;j<n;j++){
-	        if((i-j==2)){
+	        if((i-j==2||i+j==6)){
 	        System.out.print("*");
 	        }
 	        else{
