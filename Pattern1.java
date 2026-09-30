@@ -6,7 +6,7 @@ public class Pattern1 {
       
 for(int i=0;i<n;i++){
     for(int j=0;j<n;j++){
-        if((i-j>-1)&&(i+j<n)){
+        if((i-j>=0)&&(i+j<n)){
           System.out.print("*");
         }
         else{
@@ -16,10 +16,6 @@ for(int i=0;i<n;i++){
     }
     System.out.println(" ");
 }
-
-
-
-
     }
     
 }
