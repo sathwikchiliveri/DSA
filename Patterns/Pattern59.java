@@ -1,3 +1,4 @@
+package patterns;
 import java.util.Scanner;
 public class Pattern59 {
  public static void main(String []args){
