@@ -1,0 +1,2 @@
+CREATE DATABASE College;
+CREATE TABLE Students(Department STR,Rollno VARCHAR)
